@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --secondCOl: #3186b0;
+    --mainCol: black;
+    --whiteShade: #7e7e7e;
+}
+
+.surface {
+    height: 30rem;
+    width: 30rem;
+    background-image: linear-gradient(155deg,
+            hsl(200deg 30% 82%) 4%,
+            hsl(200deg 27% 76%) 19%,
+            hsl(200deg 23% 69%) 26%,
+            hsl(203deg 20% 63%) 32%,
+            hsl(202deg 16% 57%) 38%,
+            hsl(202deg 13% 50%) 45%,
+            hsl(205deg 10% 44%) 55%,
+            hsl(203deg 7% 38%) 68%,
+            hsl(204deg 3% 32%) 100%);
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backCircle {
+    height: 29rem;
+    width: 29rem;
+    background: rgb(5, 5, 5);
+    background: linear-gradient(142deg, rgb(229 235 231) 0%, rgb(0 0 0) 48%);
+    border-radius: 50%;
+    border: 0.1rem solid rgb(122, 120, 120);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleContainer {
+    height: 65%;
+    width: 65%;
+    border-radius: 50%;
+    background: linear-gradient(142deg, rgb(229 235 231) 0%, rgb(0 0 0) 48%);
+    position: relative;
+}
+
+.piece1 {
+    height: 47%;
+    width: 47%;
+    border-radius: 100% 0 0;
+    background-color: var(--secondCOl);
+    border: 0.2rem solid gray;
+
+}
+
+.piece2 {
+    height: 47%;
+    width: 47%;
+    border-radius: 0 0 0 100%;
+    background-color: white;
+    margin-top: 0.5rem;
+    border: 0.2rem solid gray;
+
+}
+
+.piece3 {
+    height: 47%;
+    width: 47%;
+    border: 0 100% 0 0;
+    background-color: var(--secondCOl);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 0 0 100% 0;
+    border: 0.2rem solid gray;
+
+}
+
+.piece4 {
+    height: 47%;
+    width: 47%;
+    border-radius: 0 100% 0 0;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border: 0.2rem solid gray;
+
+
+}
+
+.letter {
+    font-size: 5rem;
+    position: absolute;
+    color: white;
+    text-shadow: 1px 2px 3px #333;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+}
+
+.b {
+    right: 89%;
+    top: -9%;
+    transform: rotate(-52deg);
+}
+
+.m {
+    right: 87%;
+    top: 3%;
+    transform: translate(200%, -100%);
+}
+
+.w {
+    left: 82%;
+    top: -9%;
+    transform: rotate(60deg);
+}
